@@ -16,5 +16,3 @@ after_script:
 branches:
   only:
    - master
-
-   82366bbe0b3f425f0758710196e57f9644033672
