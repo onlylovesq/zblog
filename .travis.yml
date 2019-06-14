@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "10.16.0"
+install: 
+  - npm install
+script:
+  - hexo g
+after_script:
+  - cd ./public
+  - git config user.name "onlylovesq"
+  - git config user.email "943788231@qq.com"
+  - git init 
+  - git add .
+  - git commit -m "modify"
+  - git push --force "https://${TOKEN}@github.com/onlylovesq/zblog.git" master:gh-pages
+branches:
+  only:
+   - master
+
+   82366bbe0b3f425f0758710196e57f9644033672
