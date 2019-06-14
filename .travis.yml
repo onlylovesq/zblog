@@ -11,7 +11,7 @@ after_script:
   - git config user.email "943788231@qq.com"
   - git init 
   - git add .
-  - git commit -m "modify"
+  - git commit -m "init"
   - git push --force "https://${TOKEN}@github.com/onlylovesq/zblog.git" master:gh-pages
 branches:
   only:
